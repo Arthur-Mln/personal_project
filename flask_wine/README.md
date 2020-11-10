@@ -2,7 +2,8 @@
 
 This project is a wine predictor based on the dataset "winemag-data-130k-v2.csv" (50.46 MB)
 The dataset is available on Kaggle : https://www.kaggle.com/zynicide/wine-reviews
-Our model as been trained only on French Wines (data set with 22093 entries, training set (80%) = 15173 entries)
+Our model as been trained only on French Wines (data set with 22093 entries, training set (80%) = 15173 entries).
+You can find the app on my DockerHub (account : arthurmln)
 
 
 To run the programm please go on the right folder and enter :
