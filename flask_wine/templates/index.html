@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>WINE PREDICTOR</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/jumbotron-narrow.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <h3 class="text-muted">WINE PREDICTOR</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Predicting Wine Notation</h1>
+        <p class="lead">Fill the needed data to predict your wine notation!</p>
+        <!-- <p><a class="btn btn-lg btn-success" href="home" role="button">Get started</a></p> -->
+      </div class="form-row">
+        <form action="/predict/" method="post">
+        	<div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="WinePrice">Wine Price</label>
+			      <input type="number" value=32 step="0.01" class="form-control" id="WinePrice" name="WinePrice" placeholder="Enter Value">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="WineProvince">Wine Province</label>
+			      <input type="text" value="Rhône Valley" step="0.01" class="form-control" id="WineProvince" name="WineProvince" placeholder="Enter Value">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="WineVariety">Wine Variety</label>
+			      <input type="text" value="Rhône-style Red Blend" step="0.01" class="form-control" id="WineVariety" name="WineVariety" placeholder="Enter Value">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="Winery">Winery</label>
+			      <input type="text" value="Famille Perrin" step=0.01 class="form-control" id="Winery" name="Winery" placeholder="Enter Value">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="WineRegion">Wine Region_1</label>
+			      <input type="text" value="Vacqueyras" step=0.01 class="form-control" id="WineRegion" name="WineRegion" placeholder="Enter Value">
+			    </div>
+			</div>
+		    <button type="submit" class="btn btn-primary">Predict</button>
+		</form>
+		<br>
+      <footer class="footer">
+        <p>&copy; Arthur-Mln</p>
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>
